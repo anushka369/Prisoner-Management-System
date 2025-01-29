@@ -98,11 +98,26 @@ python Prisoner_Management.py
 - Passwords are stored in a text file (`Password.Txt`). It is recommended to enhance security by implementing encryption.
 - Ensure the database credentials are not exposed in the script.
 
+---
+
 ## 🔮 Future Enhancements
 - Implementing a GUI using Tkinter or Flask.
 - Improving authentication with hashed passwords.
 - Adding role-based access control.
 - Integrating biometric authentication for enhanced security.
+
+---
+
+## Contributing 🤝
+
+This is a personal learning project, but contributions and suggestions are welcome! 
+<br> If you find any improvements, feel free to create a pull request. To contribute:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature/bug fix.
+
+3. Commit your changes and submit a pull request.
 
 ---
 
