@@ -29,17 +29,22 @@ The **Prisoner Management System** is a database-driven application built using 
 ---
 
 ## 📊 Database Schema
-The system manages prisoner records stored in the **PRISONER** table with the following fields:
-- `SNO` (INT, Primary Key)
-- `NAME` (VARCHAR)
-- `CELLNO` (INT)
-- `CRIME` (VARCHAR)
-- `ADMISSIONDATE` (DATE)
-- `SENTENCEPERIOD` (INT)
-- `RELEASEDATE` (DATE, Auto-calculated)
-- `MEDICALDETAILS` (VARCHAR)
-- `FOOD` (VARCHAR)
-- `VISITINGPRIVILEGES` (VARCHAR)
+
+- `PRISONER`
+- `CELL`
+- `CRIMERECORD`
+- `MEDICALRECORD`
+- `PAROLE`
+- `INCIDENTREPORT`
+- `VISITOR`
+- `DISCIPLINARYACTIONS`
+- `WORKASSIGNMENT`
+- `EDUCATIONREHABILITATION`
+- `VISITLOG`
+- `GUARDDUTYSCHEDULE`
+- `STAFF`
+- `PRIOSNERTRANSFER`
+- `SECURITYINCIDENT`
 
 ---
 
@@ -54,8 +59,8 @@ pip install mysql-connector-python
 ### 2. Configure MySQL Database:
 Create the database and table using MySQL:
 ```sql
-CREATE DATABASE prisoner_db;
-USE prisoner_db;
+CREATE DATABASE prisoner_management;
+USE prisoner_management;
 
 ```
 
@@ -64,10 +69,10 @@ Modify the database connection details in the Python script:
 ```python
 conn = mysql.connector.connect
 (
-    host='localhost',
-    username='root',
-    password='your_password',
-    database='prisoner_db'
+    host = 'localhost',
+    username = 'your_username',
+    password = 'your_password',
+    database = 'prisoner_management'
 )
 ```
 
@@ -121,8 +126,7 @@ This is a personal learning project, but contributions and suggestions are welco
 
 ---
 
-## 🚀 Author
-Developed by **Anushka**. <br>
-📧 [ab8991@srmist.edu.in](mailto:ab8991@srmist.edu.in)
+## 🚀 Authors
+Developed by [**@Anushka Banerjee**](https://www.github.com/anushka369/) and [**@Shashank Singh**](https://www.github.com/shashankexore/).
 
 ---
